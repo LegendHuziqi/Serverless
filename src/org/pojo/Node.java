@@ -8,8 +8,16 @@ public class Node {
     private Integer nodeCPUCore;
     private Integer nodeCPUFrequency;
     private Integer nodeRAM;
-    private Integer nodeROM;
+    private Integer nodeAvailableROM;
     private String IP;
+
+    public Integer getNodeAvailableROM() {
+        return nodeAvailableROM;
+    }
+
+    public void setNodeAvailableROM(Integer nodeAvailableROM) {
+        this.nodeAvailableROM = nodeAvailableROM;
+    }
 
     public Long getNodeId() {
         return nodeId;
@@ -49,14 +57,6 @@ public class Node {
 
     public void setNodeRAM(Integer nodeRAM) {
         this.nodeRAM = nodeRAM;
-    }
-
-    public Integer getNodeROM() {
-        return nodeROM;
-    }
-
-    public void setNodeROM(Integer nodeROM) {
-        this.nodeROM = nodeROM;
     }
 
     public String getIP() {

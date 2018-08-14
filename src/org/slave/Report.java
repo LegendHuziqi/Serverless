@@ -1,6 +1,7 @@
 package org.slave;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import org.hyperic.sigar.*;
 import com.alibaba.fastjson.*;
@@ -42,14 +43,16 @@ public class Report {
     public static String reportRAM() throws SigarException {
         Sigar sigar = new Sigar();
         Mem mem = sigar.getMem();
-        System.out.println(mem.getTotal());
+        System.out.println(mem.getTotal()/ 1024L/ 1024L);
+        System.out.println(mem.getFree()/ 1024L/ 1024L);
+        System.out.println(mem.getRam());
         return null;
     }
 
 //    public static String reportRAM(){
 //
 //    }
-    public static void main(String[] args) {
-        Report.reportCPU();
+    public static void main(String[] args) throws SigarException, IOException {
+
     }
 }
