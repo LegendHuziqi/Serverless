@@ -50,7 +50,7 @@ public class TCPConn {
                         }
                     }).option(ChannelOption.SO_BACKLOG, 128)
                     .childOption(ChannelOption.SO_KEEPALIVE, true)
-                    .childOption(ChannelOption.CONNECT_TIMEOUT_MILLIS,10000)
+                    .childOption(ChannelOption.CONNECT_TIMEOUT_MILLIS, 10000)
                     .childOption(ChannelOption.TCP_NODELAY, true)
                     .childOption(ChannelOption.SO_REUSEADDR, true)     //重用地址
                     .childOption(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT)// heap buf 's better
@@ -66,14 +66,14 @@ public class TCPConn {
     }
 
     public static void main(String[] args) throws Exception {
-        Thread inbound=new Thread(new Runnable() {
+        Thread inbound = new Thread(new Runnable() {
             @Override
             public void run() {
                 TCPConn serverIn = new TCPConn();
                 try {
                     serverIn.startinbound(8888);
                 } catch (Exception e) {
-                    log.error("Inbound Server crash!!!",e);
+                    log.error("Inbound Server crash!!!", e);
                     System.exit(1);
                 }
             }
@@ -81,11 +81,4 @@ public class TCPConn {
         log.debug("aaaa");
         inbound.start();
     }
-=======
-/**
- * Created by LegendHu on 2018/8/13.
- */
-public class TCPConn {
-
->>>>>>> origin/master
 }
