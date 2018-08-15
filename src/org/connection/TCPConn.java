@@ -21,13 +21,6 @@ public class TCPConn {
     private static Logger log = Logger.getLogger(TCPConn.class);
 
     public void startinbound(int port) throws Exception {
-//        # RHEL/CentOS/Fedora:
-//        sudo yum install autoconf automake libtool make tar \
-//        glibc-devel libaio-devel \
-//        libgcc.i686 glibc-devel.i686
-//        # Debian/Ubuntu:
-//        sudo apt-get install autoconf automake libtool make tar \
-//        gcc-multilib libaio-dev
         EventLoopGroup bossGroup = new EpollEventLoopGroup(0x1, Executors.newCachedThreadPool()); //mainReactor    1个线程
         EventLoopGroup workerGroup = new EpollEventLoopGroup(Runtime.getRuntime().availableProcessors() * 0x3, Executors.newCachedThreadPool());   //subReactor       线程数量等价于cpu个数+1
 

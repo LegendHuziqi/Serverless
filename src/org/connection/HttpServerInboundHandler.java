@@ -30,6 +30,7 @@ public class HttpServerInboundHandler extends ChannelInboundHandlerAdapter {
             buf.release();
             String tt = fhr.uri() +message ;
             log.debug(tt);
+            log.error("sadsadsadsadsad");
             System.out.println(fhr.uri());
             FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1,
                     OK, Unpooled.wrappedBuffer(tt.getBytes("UTF-8")));
@@ -44,40 +45,6 @@ public class HttpServerInboundHandler extends ChannelInboundHandlerAdapter {
         }catch (Exception e){
             e.printStackTrace();
         }
-//        String queueName ="testQueue";
-//
-//        if (msg instanceof HttpRequest) {
-//            request = (HttpRequest) msg;
-//            uri = request.uri();
-//            queueName = uri.substring(1, uri.length());
-//            log.debug("Queue Name is: " + queueName);
-//        }
-//        if (msg instanceof HttpContent) {
-//            long start=System.nanoTime();
-//            try {
-//                HttpContent content = (HttpContent) msg;
-//                ByteBuf buf = content.content();
-//                String message = buf.toString(io.netty.util.CharsetUtil.UTF_8);
-//                buf.release();
-//                log.debug("message is: " + message);
-//
-//            } catch (Exception e) {
-//                log.error("system error:", e);
-//            }
-//            String result = "OK";
-//            log.debug("result is: " + result);
-//            FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1,
-//                    OK, Unpooled.wrappedBuffer(result.getBytes("UTF-8")));
-//            response.headers().set(CONTENT_TYPE, "text/plain");
-//            response.headers().setInt(CONTENT_LENGTH,
-//                    response.content().readableBytes());
-//            if (HttpHeaderUtil.isKeepAlive(request)) {
-//                response.headers().set(CONNECTION, KEEP_ALIVE);
-//            }
-//            ctx.write(response);
-//            ctx.flush();
-//            System.out.println(System.nanoTime()-start);
-//        }
         log.debug("--------------------------------------");
     }
 

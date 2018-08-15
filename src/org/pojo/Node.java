@@ -9,7 +9,8 @@ public class Node {
     private Integer nodeCPUFrequency;
     private Integer nodeRAM;
     private Integer nodeAvailableROM;
-    private String IP;
+    private String innerIP;
+    private String outerIP;
 
     public Integer getNodeAvailableROM() {
         return nodeAvailableROM;
@@ -59,12 +60,20 @@ public class Node {
         this.nodeRAM = nodeRAM;
     }
 
-    public String getIP() {
-        return IP;
+    public String getInnerIP() {
+        return innerIP;
     }
 
-    public void setIP(String IP) {
-        this.IP = IP;
+    public void setInnerIP(String innerIP) {
+        this.innerIP = innerIP;
+    }
+
+    public String getOuterIP() {
+        return outerIP;
+    }
+
+    public void setOuterIP(String outerIP) {
+        this.outerIP = outerIP;
     }
 
     public Integer getNodeCPUCore() {
