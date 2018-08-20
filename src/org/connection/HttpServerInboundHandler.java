@@ -6,6 +6,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.*;
 import org.apache.log4j.Logger;
+import org.reflaction.ReflactService;
 
 import static io.netty.handler.codec.http.HttpHeaderNames.*;
 import static io.netty.handler.codec.http.HttpResponseStatus.OK;
@@ -23,17 +24,23 @@ public class HttpServerInboundHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg)
             throws Exception {
         try {
+            log.info("HttpServerInboundHandler.channelRead");
             FullHttpRequest fhr = (FullHttpRequest) msg;
-
+            System.out.println(fhr);
             ByteBuf buf = fhr.content();
             String message = buf.toString(io.netty.util.CharsetUtil.UTF_8);
             buf.release();
+            System.out.println("===============================");
+            System.out.println(fhr.headers());
+            System.out.println("===============================");
             String tt = fhr.uri() +message ;
-            log.debug(tt);
-            log.error("sadsadsadsadsad");
+            System.out.println("ddddddddddddddddddddddddddd"+tt);
+            ReflactService rs=new ReflactService();
+            String res = rs.reflact(message,"bbb");
             System.out.println(fhr.uri());
             FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1,
-                    OK, Unpooled.wrappedBuffer(tt.getBytes("UTF-8")));
+                    OK, Unpooled.wrappedBuffer(res.getBytes("UTF-8")));
+
             response.headers().set(CONTENT_TYPE, "text/plain");
             response.headers().setInt(CONTENT_LENGTH,
                     response.content().readableBytes());

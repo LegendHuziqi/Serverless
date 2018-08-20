@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import org.hyperic.sigar.*;
 import com.alibaba.fastjson.*;
+import oshi.hardware.GlobalMemory;
+import oshi.software.os.OSProcess;
 
 import static com.alibaba.fastjson.JSON.toJSONString;
 
@@ -12,6 +14,23 @@ public class Report {
     public static String reportCPU() {
         class CPU{
             Integer core;
+
+            public Integer getCore() {
+                return core;
+            }
+
+            public void setCore(Integer core) {
+                this.core = core;
+            }
+
+            public Integer getFrequency() {
+                return frequency;
+            }
+
+            public void setFrequency(Integer frequency) {
+                this.frequency = frequency;
+            }
+
             Integer frequency;
         }
         try {
@@ -27,6 +46,7 @@ public class Report {
                 sb.append(line);
             }
             String result = sb.toString();
+            System.out.println(result);
             cpu.core=Integer.parseInt(result.substring(6,7));
             String tmp=result.substring(result.length()-7,result.length()-3);
             Float tmp2=Float.parseFloat(tmp)*1000;
@@ -52,7 +72,8 @@ public class Report {
 //    public static String reportRAM(){
 //
 //    }
-    public static void main(String[] args) throws SigarException, IOException {
 
+    public static void main(String[] args) throws SigarException, IOException {
+        reportCPU();
     }
 }
