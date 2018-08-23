@@ -3,7 +3,7 @@ package org.pojo;
 import java.util.List;
 
 public class Service {
-    private Long serviceId;
+    private String serviceId;
     private String serviceName;
     private String serviceUpdater;
     private String serviceDate;
@@ -17,11 +17,11 @@ public class Service {
         this.nodelist = nodelist;
     }
 
-    public Long getServiceId() {
+    public String getServiceId() {
         return serviceId;
     }
 
-    public void setServiceId(Long serviceId) {
+    public void setServiceId(String serviceId) {
         this.serviceId = serviceId;
     }
 

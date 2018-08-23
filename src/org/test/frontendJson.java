@@ -32,10 +32,10 @@ public class frontendJson {
         f.serviceName="TestService";
         Node a=new Node();
         Node b=new Node();
-        a.setNodeId(135862142313L);
+        a.setNodeId(String.valueOf(135862142313L));
         //天津
         a.setOuterIP("211.94.245.249");
-        b.setNodeId(135915190723L);
+        b.setNodeId(String.valueOf(135915190723L));
         //宁波
         b.setOuterIP("115.220.168.1");
         f.node=new ArrayList();

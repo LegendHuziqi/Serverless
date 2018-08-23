@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="pditest@localhost" uuid="fd7e2f73-5a22-4973-a087-cba826348985">
+    <data-source source="LOCAL" name="serverless@localhost" uuid="3770df08-2004-4f4f-91d9-f929abfcf57d">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/pditest</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/serverless</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

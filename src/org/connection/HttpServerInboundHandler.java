@@ -1,5 +1,7 @@
 package org.connection;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
@@ -26,21 +28,17 @@ public class HttpServerInboundHandler extends ChannelInboundHandlerAdapter {
         try {
             log.info("HttpServerInboundHandler.channelRead");
             FullHttpRequest fhr = (FullHttpRequest) msg;
-            System.out.println(fhr);
             ByteBuf buf = fhr.content();
             String message = buf.toString(io.netty.util.CharsetUtil.UTF_8);
             buf.release();
-            System.out.println("===============================");
-            System.out.println(fhr.headers());
-            System.out.println("===============================");
-            String tt = fhr.uri() +message ;
-            System.out.println("ddddddddddddddddddddddddddd"+tt);
+            JSONObject jsonObject = JSON.parseObject(message);
             ReflactService rs=new ReflactService();
-            String res = rs.reflact(message,"bbb");
+            System.out.println(jsonObject.getString("service"));
+            System.out.println(jsonObject.getString("args"));
+            String res = rs.reflact(jsonObject.getString("service"),jsonObject.getString("args"));
             System.out.println(fhr.uri());
             FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1,
                     OK, Unpooled.wrappedBuffer(res.getBytes("UTF-8")));
-
             response.headers().set(CONTENT_TYPE, "text/plain");
             response.headers().setInt(CONTENT_LENGTH,
                     response.content().readableBytes());

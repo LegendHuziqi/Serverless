@@ -10,9 +10,6 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * Created by jingbao on 18-6-25.
- */
 public class TetsPost {
     public static void main(String[] args) throws IOException, InterruptedException {
         for (int i=100;i<101;i++){
@@ -20,7 +17,7 @@ public class TetsPost {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    jsonPost("http://127.0.0.1:8888", "Report");
+                    jsonPost("http://127.0.0.1:8888", "{\"service\":\"createServerService\",\"args\":\"test\"}");
                 }
             }).start();
         }
@@ -46,28 +43,7 @@ public class TetsPost {
             out.flush();
             out.close();
 
-//            int code = connection.getResponseCode();
-//            InputStream is = null;
-//            if (code == 200) {
-//                is = connection.getInputStream();
-//            } else {
-//                is = connection.getErrorStream();
-//            }
-//
-//            // 读取响应
-//            int length = (int) connection.getContentLength();// 获取长度
-//            if (length != -1) {
-//                byte[] data = new byte[length];
-//                byte[] temp = new byte[512];
-//                int readLen = 0;
-//                int destPos = 0;
-//                while ((readLen = is.read(temp)) > 0) {
-//                    System.arraycopy(temp, 0, data, destPos, readLen);
-//                    destPos += readLen;
-//                }
-//                String result = new String(data, "UTF-8"); // utf-8编码
-//                return result;
-//            }
+
             System.out.println("read 2");
             BufferedReader read=new BufferedReader(new InputStreamReader
                     (connection.getInputStream()));
@@ -76,9 +52,6 @@ public class TetsPost {
             while ((result=read.readLine())!=null){
                 System.out.println("read");
                 System.out.println(result);
-
-
-
             }
             System.out.println(connection.getHeaderField("Cookie"));
         } catch (IOException e) {

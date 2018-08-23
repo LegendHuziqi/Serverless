@@ -1,30 +1,23 @@
 package org.pojo;
 
 public class Node {
-    private Long nodeId;
+    private String nodeId;
     private String nodeName;
     private String nodeLocation;
-    private Integer nodeAbility;
-    private Integer nodeCPUCore;
-    private Integer nodeCPUFrequency;
-    private Integer nodeRAM;
-    private Integer nodeAvailableROM;
+    private String nodeAbility;
+    private String nodeCPUCore;
+    private String nodeCPUFrequency;
+    private String nodeRAM;
+    private String nodeAvailableROM;
     private String innerIP;
     private String outerIP;
+    private String runService;
 
-    public Integer getNodeAvailableROM() {
-        return nodeAvailableROM;
-    }
-
-    public void setNodeAvailableROM(Integer nodeAvailableROM) {
-        this.nodeAvailableROM = nodeAvailableROM;
-    }
-
-    public Long getNodeId() {
+    public String getNodeId() {
         return nodeId;
     }
 
-    public void setNodeId(Long nodeId) {
+    public void setNodeId(String nodeId) {
         this.nodeId = nodeId;
     }
 
@@ -44,20 +37,44 @@ public class Node {
         this.nodeLocation = nodeLocation;
     }
 
-    public Integer getNodeAbility() {
+    public String getNodeAbility() {
         return nodeAbility;
     }
 
-    public void setNodeAbility(Integer nodeAbility) {
+    public void setNodeAbility(String nodeAbility) {
         this.nodeAbility = nodeAbility;
     }
 
-    public Integer getNodeRAM() {
+    public String getNodeCPUCore() {
+        return nodeCPUCore;
+    }
+
+    public void setNodeCPUCore(String nodeCPUCore) {
+        this.nodeCPUCore = nodeCPUCore;
+    }
+
+    public String getNodeCPUFrequency() {
+        return nodeCPUFrequency;
+    }
+
+    public void setNodeCPUFrequency(String nodeCPUFrequency) {
+        this.nodeCPUFrequency = nodeCPUFrequency;
+    }
+
+    public String getNodeRAM() {
         return nodeRAM;
     }
 
-    public void setNodeRAM(Integer nodeRAM) {
+    public void setNodeRAM(String nodeRAM) {
         this.nodeRAM = nodeRAM;
+    }
+
+    public String getNodeAvailableROM() {
+        return nodeAvailableROM;
+    }
+
+    public void setNodeAvailableROM(String nodeAvailableROM) {
+        this.nodeAvailableROM = nodeAvailableROM;
     }
 
     public String getInnerIP() {
@@ -76,19 +93,11 @@ public class Node {
         this.outerIP = outerIP;
     }
 
-    public Integer getNodeCPUCore() {
-        return nodeCPUCore;
+    public String getRunService() {
+        return runService;
     }
 
-    public void setNodeCPUCore(Integer nodeCPUCore) {
-        this.nodeCPUCore = nodeCPUCore;
-    }
-
-    public Integer getNodeCPUFrequency() {
-        return nodeCPUFrequency;
-    }
-
-    public void setNodeCPUFrequency(Integer nodeCPUFrequency) {
-        this.nodeCPUFrequency = nodeCPUFrequency;
+    public void setRunService(String runService) {
+        this.runService = runService;
     }
 }
