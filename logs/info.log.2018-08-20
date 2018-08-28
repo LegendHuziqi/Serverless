@@ -5,7 +5,7 @@ INFO 27 [2018-08-20 15:45:47,004] org.connection.HttpServerInboundHandler - Http
 INFO 27 [2018-08-20 15:48:02,385] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 INFO 27 [2018-08-20 15:51:00,092] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 INFO 27 [2018-08-20 16:02:08,734] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
-ERROR 31 [2018-08-20 17:54:41,791] org.connection.TCPConn - Inbound Server crash!!!
+ERROR 31 [2018-08-20 17:54:41,791] org.connection.TCPConn_Server - Inbound Server crash!!!
 java.io.IOException: bind() failed: 地址已在使用
 	at io.netty.channel.epoll.Native.newIOException(Native.java:124)
 	at io.netty.channel.epoll.Native.bind(Native.java:390)

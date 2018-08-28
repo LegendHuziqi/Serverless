@@ -1,0 +1,96 @@
+INFO 29 [2018-08-23 11:43:12,845] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 11:45:01,398] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 11:45:15,266] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 12:52:54,659] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 12:54:55,290] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 12:55:07,917] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+ERROR 31 [2018-08-23 12:55:30,304] org.connection.TCPConn_Server - Inbound Server crash!!!
+java.io.IOException: bind() failed: 地址已在使用
+	at io.netty.channel.epoll.Native.newIOException(Native.java:124)
+	at io.netty.channel.epoll.Native.bind(Native.java:390)
+	at io.netty.channel.epoll.EpollServerSocketChannel.doBind(EpollServerSocketChannel.java:62)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:554)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1237)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeBindNow(ChannelHandlerInvokerUtil.java:109)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeBind(DefaultChannelHandlerInvoker.java:214)
+	at io.netty.channel.PausableChannelEventExecutor.invokeBind(PausableChannelEventExecutor.java:101)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1013)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:236)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:328)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:254)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO 29 [2018-08-23 12:55:45,644] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 12:59:16,043] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 12:59:36,848] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:08:18,666] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:10:54,768] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:13:36,603] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:15:27,040] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:26:47,705] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:29:43,802] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+ERROR 31 [2018-08-23 13:30:33,531] org.connection.TCPConn_Server - Inbound Server crash!!!
+java.io.IOException: bind() failed: 地址已在使用
+	at io.netty.channel.epoll.Native.newIOException(Native.java:124)
+	at io.netty.channel.epoll.Native.bind(Native.java:390)
+	at io.netty.channel.epoll.EpollServerSocketChannel.doBind(EpollServerSocketChannel.java:62)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:554)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1237)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeBindNow(ChannelHandlerInvokerUtil.java:109)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeBind(DefaultChannelHandlerInvoker.java:214)
+	at io.netty.channel.PausableChannelEventExecutor.invokeBind(PausableChannelEventExecutor.java:101)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1013)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:236)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:328)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:254)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO 29 [2018-08-23 13:30:50,146] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:31:22,821] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:31:37,677] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:32:08,609] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:37:45,075] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+ERROR 31 [2018-08-23 13:40:13,806] org.connection.TCPConn_Server - Inbound Server crash!!!
+java.io.IOException: bind() failed: 地址已在使用
+	at io.netty.channel.epoll.Native.newIOException(Native.java:124)
+	at io.netty.channel.epoll.Native.bind(Native.java:390)
+	at io.netty.channel.epoll.EpollServerSocketChannel.doBind(EpollServerSocketChannel.java:62)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:554)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1237)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeBindNow(ChannelHandlerInvokerUtil.java:109)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeBind(DefaultChannelHandlerInvoker.java:214)
+	at io.netty.channel.PausableChannelEventExecutor.invokeBind(PausableChannelEventExecutor.java:101)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:481)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1013)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:236)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:328)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:254)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+INFO 29 [2018-08-23 13:40:26,546] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:41:18,724] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:41:47,215] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:42:18,043] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 13:43:52,980] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 20:30:23,567] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 20:31:47,840] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 20:32:54,986] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 20:37:18,099] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 20:37:25,297] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 21:02:21,047] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 21:03:30,500] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 21:03:46,728] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 21:04:39,539] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 21:06:20,589] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
+INFO 29 [2018-08-23 21:07:50,366] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead

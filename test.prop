@@ -1,0 +1,4 @@
+port = 8088
+method = post
+start = ./bin/xxx/start.sh
+

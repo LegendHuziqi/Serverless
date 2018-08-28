@@ -1,7 +1,9 @@
-package org.connection;
+package org.slave;
 
-//import com.google.gson.Gson;
-//import pojo.User;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
+import org.pojo.Node;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,29 +12,18 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class TetsPost {
-    public static void main(String[] args) throws IOException, InterruptedException {
-        for (int i=100;i<101;i++){
-            int finalI = i;
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    jsonPost("http://192.168.56.3:8888", "{\"service\":\"createServerService\",\"args\":\"test\"}");
-                }
-            }).start();
-        }
+import static com.alibaba.fastjson.JSON.parseObject;
 
-    }
-    public static String jsonPost(String strURL,String command) {
+public class Utils_provideService {
+    public static String post2Service(String port,String command) {
 //        System.setProperty("http.keepalive","false");
         try {System.out.println("post");
-            URL url = new URL(strURL);// 创建连接
+            URL url = new URL("http://127.0.0.1:"+port);// 创建连接
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setDoOutput(true);
             connection.setDoInput(true);
             connection.setUseCaches(false);
             connection.setInstanceFollowRedirects(true);
-//            connection.setRequestProperty("","");
             connection.setRequestMethod("POST"); // 设置请求方式
             connection.setRequestProperty("Accept", "*/*"); // 设置接收数据的格式
             connection.setRequestProperty("Content-Type", "multipart/form-data"); // 设置发送数据的格式
@@ -47,15 +38,19 @@ public class TetsPost {
             System.out.println("response");
             BufferedReader read=new BufferedReader(new InputStreamReader
                     (connection.getInputStream()));
-            String result="";
-
-            while ((result=read.readLine())!=null){
-                System.out.println(result);
-            }
+            String result=read.readLine();
+            return result;
+//            while ((result=read.readLine())!=null){
+//                System.out.println(result);
+//            }
         } catch (IOException e) {
 //            LOG.error("Exception occur when send http post request!", e);
         }
         return "error"; // 自定义错误信息
+    }
+    public static JSONObject parseJson(String data){
+        JSONObject obj=JSON.parseObject(data);
+        return obj;
     }
 
 }

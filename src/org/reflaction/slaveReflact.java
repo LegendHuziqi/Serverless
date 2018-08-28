@@ -1,7 +1,6 @@
 package org.reflaction;
 
 import org.master.Service;
-import org.slave.Report;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -9,10 +8,10 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ReflactService {
+public class slaveReflact {
     public static String reflact(String serviceName,String args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
 
-        Class c = Class.forName("org.master.Service");
+        Class c = Class.forName("org.slave.Service");
         Constructor constructor = c.getConstructor();
         Service service = (Service) constructor.newInstance();
         Method[] method = c.getMethods();

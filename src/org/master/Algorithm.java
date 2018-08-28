@@ -38,7 +38,7 @@ public class Algorithm {
             ps.setString(2,rs.getString("innerip"));
             ResultSet rs2=null;
             ps.execute();
-            return rs.getString("innerip")+"new";
+            return rs.getString("innerip");
         }
         else return "error";
     }

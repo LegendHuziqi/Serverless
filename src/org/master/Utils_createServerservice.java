@@ -1,12 +1,13 @@
 package org.master;
 
+import com.mysql.jdbc.PreparedStatement;
+
 import java.io.File;
 import java.io.FileInputStream;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Properties;
 import java.util.UUID;
+import static org.connection.DBConn.getconn;
 
 public class Utils_createServerservice {
     private String driver;
@@ -49,7 +50,18 @@ public class Utils_createServerservice {
         }
     }
 
-
+    public static void write2DB(String serviceId,String serviceName) throws SQLException {
+        com.mysql.jdbc.Connection conn=getconn();
+        String sql="insert into service values (?,?,?,?)";
+        PreparedStatement ps;
+        ResultSet rs=null;
+        ps=(PreparedStatement) conn.prepareStatement(sql);
+        ps.setString(1,serviceId);
+        ps.setString(2,serviceName);
+        ps.setString(3,"zhengjie");
+        ps.setString(4,String.valueOf(System.currentTimeMillis()));
+        ps.execute();
+    }
 
     public static void mkdir(String serviceId){
         String path = "/home/legendhu/userfiles/"+serviceId;

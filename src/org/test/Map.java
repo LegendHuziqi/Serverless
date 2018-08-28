@@ -1,3 +1,4 @@
+package org.test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,16 +15,11 @@ public class Map {
 //        map.put("1","bb");
 //        map.put("2","cc");
 //        System.out.println(map,get("1"));
-        FileInputStream fis = new FileInputStream("/home/lxx/untitled/src/xxx");
+        FileInputStream fis = new FileInputStream("/home/legendhu/userfiles/test.prop");
 //        get.a
         Properties p = new Properties();
         p.load(fis);
-        Scanner sc =new Scanner(System.in);
-        String str =sc.next();
-        System.out.println(p.getProperty(str));
-        HashMap m=new HashMap();
-        m.put(sc,p.getProperty(str));
-        System.out.println(m.get(sc));
+
 
     }
 }

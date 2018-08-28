@@ -30,7 +30,7 @@ DEBUG [2018-08-20 10:24:40,012] io.netty.buffer.PooledByteBufAllocator - -Dio.ne
 DEBUG [2018-08-20 10:24:40,012] io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
 DEBUG [2018-08-20 10:24:40,021] io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
 DEBUG [2018-08-20 10:24:40,022] io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
-DEBUG [2018-08-20 10:24:46,296] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 10:24:46,296] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 10:24:46,332] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 10:24:46,337] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 10:24:46,384] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -102,7 +102,7 @@ DEBUG [2018-08-20 10:26:09,280] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 10:26:09,282] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 DEBUG [2018-08-20 10:26:09,300] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetectionLevel: simple
 DEBUG [2018-08-20 10:26:09,384] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
-DEBUG [2018-08-20 14:21:57,755] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 14:21:57,755] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 14:21:57,792] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 14:21:57,799] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 14:21:57,839] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -174,7 +174,7 @@ DEBUG [2018-08-20 14:22:00,999] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 14:22:01,005] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetectionLevel: simple
 DEBUG [2018-08-20 14:22:01,008] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 DEBUG [2018-08-20 14:22:01,052] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
-DEBUG [2018-08-20 14:52:32,812] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 14:52:32,812] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 14:52:32,831] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 14:52:32,837] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 14:52:32,882] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -209,7 +209,7 @@ DEBUG [2018-08-20 14:52:32,979] io.netty.buffer.ByteBufUtil - -Dio.netty.allocat
 DEBUG [2018-08-20 14:52:32,979] io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
 DEBUG [2018-08-20 14:52:32,980] io.netty.util.NetUtil - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
 DEBUG [2018-08-20 14:52:32,981] io.netty.util.NetUtil - /proc/sys/net/core/somaxconn: 128
-DEBUG [2018-08-20 15:43:35,113] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 15:43:35,113] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 15:43:35,137] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 15:43:35,143] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 15:43:35,176] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -250,7 +250,7 @@ INFO [2018-08-20 15:45:31,076] org.connection.HttpServerInboundHandler - HttpSer
 DEBUG [2018-08-20 15:45:31,081] org.connection.HttpServerInboundHandler - --------------------------------------
 INFO [2018-08-20 15:45:47,004] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 DEBUG [2018-08-20 15:45:47,255] org.connection.HttpServerInboundHandler - --------------------------------------
-DEBUG [2018-08-20 15:46:37,607] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 15:46:37,607] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 15:46:37,630] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 15:46:37,639] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 15:46:37,677] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -289,7 +289,7 @@ DEBUG [2018-08-20 15:48:02,321] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 15:48:02,366] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 INFO [2018-08-20 15:48:02,385] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 DEBUG [2018-08-20 15:48:02,519] org.connection.HttpServerInboundHandler - --------------------------------------
-DEBUG [2018-08-20 15:50:56,930] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 15:50:56,930] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 15:50:56,961] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 15:50:56,968] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 15:50:57,024] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -328,7 +328,7 @@ DEBUG [2018-08-20 15:51:00,027] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 15:51:00,077] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 INFO [2018-08-20 15:51:00,092] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 DEBUG [2018-08-20 15:51:00,231] org.connection.HttpServerInboundHandler - --------------------------------------
-DEBUG [2018-08-20 15:56:22,288] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 15:56:22,288] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 15:56:22,318] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 15:56:22,327] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 15:56:22,362] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -367,7 +367,7 @@ DEBUG [2018-08-20 16:02:08,672] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 16:02:08,716] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 INFO [2018-08-20 16:02:08,734] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 DEBUG [2018-08-20 16:02:08,894] org.connection.HttpServerInboundHandler - --------------------------------------
-DEBUG [2018-08-20 17:54:41,572] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 17:54:41,572] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 17:54:41,599] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 17:54:41,607] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 17:54:41,651] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -402,7 +402,7 @@ DEBUG [2018-08-20 17:54:41,769] io.netty.buffer.ByteBufUtil - -Dio.netty.allocat
 DEBUG [2018-08-20 17:54:41,769] io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
 DEBUG [2018-08-20 17:54:41,771] io.netty.util.NetUtil - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
 DEBUG [2018-08-20 17:54:41,771] io.netty.util.NetUtil - /proc/sys/net/core/somaxconn: 128
-ERROR [2018-08-20 17:54:41,791] org.connection.TCPConn - Inbound Server crash!!!
+ERROR [2018-08-20 17:54:41,791] org.connection.TCPConn_Server - Inbound Server crash!!!
 java.io.IOException: bind() failed: 地址已在使用
 	at io.netty.channel.epoll.Native.newIOException(Native.java:124)
 	at io.netty.channel.epoll.Native.bind(Native.java:390)
@@ -422,7 +422,7 @@ java.io.IOException: bind() failed: 地址已在使用
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-DEBUG [2018-08-20 17:54:50,686] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 17:54:50,686] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 17:54:50,706] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 17:54:50,727] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 17:54:50,767] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -461,7 +461,7 @@ DEBUG [2018-08-20 18:00:12,480] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 18:00:12,552] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 INFO [2018-08-20 18:00:12,582] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 DEBUG [2018-08-20 18:00:12,591] org.connection.HttpServerInboundHandler - --------------------------------------
-DEBUG [2018-08-20 18:01:16,679] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 18:01:16,679] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 18:01:16,709] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 18:01:16,717] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 18:01:16,751] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -500,7 +500,7 @@ DEBUG [2018-08-20 18:01:18,552] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 18:01:18,597] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 INFO [2018-08-20 18:01:18,618] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 DEBUG [2018-08-20 18:01:18,623] org.connection.HttpServerInboundHandler - --------------------------------------
-DEBUG [2018-08-20 18:02:30,751] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 18:02:30,751] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 18:02:30,779] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 18:02:30,784] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 18:02:30,817] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -539,7 +539,7 @@ DEBUG [2018-08-20 18:02:33,749] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 18:02:33,803] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 INFO [2018-08-20 18:02:33,822] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 DEBUG [2018-08-20 18:02:33,828] org.connection.HttpServerInboundHandler - --------------------------------------
-DEBUG [2018-08-20 18:03:11,980] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 18:03:11,980] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 18:03:12,003] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 18:03:12,011] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 18:03:12,046] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -578,7 +578,7 @@ DEBUG [2018-08-20 18:03:14,590] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 18:03:14,652] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 INFO [2018-08-20 18:03:14,675] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 DEBUG [2018-08-20 18:03:14,681] org.connection.HttpServerInboundHandler - --------------------------------------
-DEBUG [2018-08-20 18:03:29,829] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 18:03:29,829] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 18:03:29,851] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 18:03:29,858] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 18:03:29,894] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -617,7 +617,7 @@ DEBUG [2018-08-20 18:03:31,811] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 18:03:31,874] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 INFO [2018-08-20 18:03:31,898] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 DEBUG [2018-08-20 18:03:31,903] org.connection.HttpServerInboundHandler - --------------------------------------
-DEBUG [2018-08-20 18:03:42,947] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 18:03:42,947] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 18:03:42,969] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 18:03:42,976] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 18:03:43,012] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
@@ -656,7 +656,7 @@ DEBUG [2018-08-20 18:03:45,446] io.netty.util.ResourceLeakDetector - -Dio.netty.
 DEBUG [2018-08-20 18:03:45,506] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
 INFO [2018-08-20 18:03:45,530] org.connection.HttpServerInboundHandler - HttpServerInboundHandler.channelRead
 DEBUG [2018-08-20 18:03:45,543] org.connection.HttpServerInboundHandler - --------------------------------------
-DEBUG [2018-08-20 18:03:50,843] org.connection.TCPConn - aaaa
+DEBUG [2018-08-20 18:03:50,843] org.connection.TCPConn_Server - aaaa
 DEBUG [2018-08-20 18:03:50,867] io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
 DEBUG [2018-08-20 18:03:50,875] io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
 DEBUG [2018-08-20 18:03:50,910] io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available

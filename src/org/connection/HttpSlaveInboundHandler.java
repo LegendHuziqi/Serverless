@@ -8,16 +8,17 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.*;
 import org.apache.log4j.Logger;
-import org.reflaction.serverReflact;
+import org.reflaction.clientReflact;
+import org.reflaction.slaveReflact;
 
 import static io.netty.handler.codec.http.HttpHeaderNames.*;
 import static io.netty.handler.codec.http.HttpResponseStatus.OK;
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
 //@ChannelHandler.Sharable
-public class HttpServerInboundHandler extends ChannelInboundHandlerAdapter {
+public class HttpSlaveInboundHandler extends ChannelInboundHandlerAdapter {
 
-    private static Logger log = Logger.getLogger(HttpServerInboundHandler.class);
+    private static Logger log = Logger.getLogger(HttpSlaveInboundHandler.class);
 
     private HttpRequest request;
     private String uri ="";
@@ -32,7 +33,7 @@ public class HttpServerInboundHandler extends ChannelInboundHandlerAdapter {
             String message = buf.toString(io.netty.util.CharsetUtil.UTF_8);
             buf.release();
             JSONObject jsonObject = JSON.parseObject(message);
-            serverReflact rs=new serverReflact();
+            slaveReflact rs=new slaveReflact();
             System.out.println(jsonObject.getString("service"));
             System.out.println(jsonObject.getString("args"));
             String res = rs.reflact(jsonObject.getString("service"),jsonObject.getString("args"));
