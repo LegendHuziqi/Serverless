@@ -8,6 +8,7 @@ public class Utils_uploadFile {
             try {
                 FileWriter fw = new FileWriter("/home/legendhu/IdeaProjects/Serverless/upload.sh", false);
                 fw.write("#!/bin/sh \n");
+                //此处是中心服务器的ip
                 fw.write("scp -r " + path + " legendhu@127.0.0.1:/home/ubuntu/userfiles/" + serviceId);
                 fw.flush();
                 fw.close();

@@ -15,7 +15,7 @@ public class TCPConn_Server {
             public void run() {
                 TCPServerUtils serverIn = new TCPServerUtils();
                 try {
-                    serverIn.startinbound(6666);
+                    serverIn.startinbound(8888);
                 } catch (Exception e) {
                     log.error("Inbound Server crash!!!", e);
                     System.exit(1);

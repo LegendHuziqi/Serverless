@@ -38,5 +38,6 @@ public class Utils_joinCluster {
         ps.setString(9,node.getInnerIP());
         ps.setString(10,node.getOuterIP());
         ps.setString(11,node.getRunService());
+        ps.execute();
         }
 }

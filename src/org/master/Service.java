@@ -69,7 +69,8 @@ public class Service {
 //        jsonPost("http://"+newNodeIP+":8088","{\"service\":\"copyfile\",\"args\":\"8efbb44d54324279abbaab88b87c52bc\"}");
         mkshscpdir(newNodeIP,serviceId);
         execShell();
-        jsonPost("http://"+newNodeIP+"8888","{\"service\":\"runService\",\"args\":\""+serviceId+"\"}");
+        System.out.println("呼唤节点启动服务"+newNodeIP);
+        jsonPost("http://"+newNodeIP+":8888","{\"service\":\"runService\",\"args\":\""+serviceId+"\"}");
         return newNodeIP;
     }
 
@@ -78,6 +79,8 @@ public class Service {
         execSQL(node);
         return "aaa";
     }
+
+    
 
     public static void main(String[] args) throws Exception {
 
